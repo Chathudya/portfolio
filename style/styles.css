@@ -1,31 +1,64 @@
+/* General Reset */
+body, h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
 body {
-    font-family: 'Poppins', sans-serif;
-    scroll-behavior: smooth;
+    font-family: 'Arial', sans-serif;
+    background-color: #fdf8f2; /* Off-white background */
+    color: #5a4033; /* Brownish text */
+    line-height: 1.6;
 }
 
-.animated-fade {
-    animation: fadeIn 1.5s ease-in;
+/* Container */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
 }
 
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
+/* Header */
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #5a4033; /* Dark brown for headers */
 }
 
-.btn-animate {
-    background-color: #A87C60;
-    color: #FFFFFF;
-    border: 2px solid transparent;
-    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease, border-color 0.3s ease;
+/* Paragraph Styling */
+p.lead {
+    font-size: 1.2rem;
+    color: #705548; /* Medium brown */
+    margin-bottom: 20px;
 }
 
-.btn-animate:hover {
-    transform: scale(1.05);
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
-    background-color: #6D4E34;
-    border-color: #A87C60;
+/* Button Styling */
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    border: 2px solid #5a4033; /* Dark brown border */
+    border-radius: 5px;
+    background-color: #5a4033; /* Dark brown background */
+    color: #fdf8f2; /* Off-white text */
+    transition: all 0.3s ease-in-out;
 }
+
+.btn:hover {
+    background-color: #fdf8f2; /* Off-white background */
+    color: #5a4033; /* Dark brown text */
+}
+
+/* Footer */
+footer {
+    margin-top: 50px;
+    font-size: 0.9rem;
+    color: #8c6d5a; /* Light brown */
+}
+
+/* Add any specific custom styles for GitHub theme */
