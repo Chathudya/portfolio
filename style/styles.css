@@ -1,3 +1,6 @@
+/* Import Poppins Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
 /* General Reset */
 body, h1, h2, h3, h4, h5, h6, p {
     margin: 0;
@@ -7,10 +10,10 @@ body, h1, h2, h3, h4, h5, h6, p {
 
 /* Body Styling */
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Poppins', sans-serif;
     background-color: #fdf8f2; /* Off-white background */
     color: #5a4033; /* Brownish text */
-    line-height: 1.6;
+    line-height: 1.8;
 }
 
 /* Container */
@@ -23,9 +26,10 @@ body {
 
 /* Header */
 header h1 {
-    font-size: 2.5rem;
+    font-size: 3rem;
     margin-bottom: 20px;
     color: #5a4033; /* Dark brown for headers */
+    font-weight: 600;
 }
 
 /* Paragraph Styling */
@@ -33,6 +37,7 @@ p.lead {
     font-size: 1.2rem;
     color: #705548; /* Medium brown */
     margin-bottom: 20px;
+    font-weight: 400;
 }
 
 /* Button Styling */
@@ -41,7 +46,7 @@ p.lead {
     text-decoration: none;
     padding: 10px 20px;
     font-size: 1rem;
-    font-weight: bold;
+    font-weight: 600;
     border: 2px solid #5a4033; /* Dark brown border */
     border-radius: 5px;
     background-color: #5a4033; /* Dark brown background */
@@ -52,6 +57,7 @@ p.lead {
 .btn:hover {
     background-color: #fdf8f2; /* Off-white background */
     color: #5a4033; /* Dark brown text */
+    font-weight: 700;
 }
 
 /* Footer */
@@ -60,5 +66,3 @@ footer {
     font-size: 0.9rem;
     color: #8c6d5a; /* Light brown */
 }
-
-/* Add any specific custom styles for GitHub theme */
