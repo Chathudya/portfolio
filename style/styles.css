@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
 /* General Reset */
-body, h1, h2, h3, h4, h5, h6, p {
+body, h1, h2, h3, p {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -14,22 +14,22 @@ body {
     background-color: #fdf8f2; /* Off-white background */
     color: #5a4033; /* Brownish text */
     line-height: 1.8;
+    padding: 20px;
 }
 
 /* Container */
 .container {
     max-width: 800px;
     margin: 0 auto;
-    padding: 20px;
     text-align: center;
 }
 
 /* Header */
 header h1 {
     font-size: 3rem;
-    margin-bottom: 20px;
     color: #5a4033; /* Dark brown for headers */
     font-weight: 600;
+    margin-bottom: 20px;
 }
 
 /* Paragraph Styling */
@@ -37,11 +37,10 @@ p.lead {
     font-size: 1.2rem;
     color: #705548; /* Medium brown */
     margin-bottom: 20px;
-    font-weight: 400;
 }
 
 /* Button Styling */
-.btn {
+.btn-primary {
     display: inline-block;
     text-decoration: none;
     padding: 10px 20px;
@@ -54,31 +53,17 @@ p.lead {
     transition: all 0.3s ease-in-out;
 }
 
-.btn:hover {
-    background-color: #fdf8f2; /* Off-white background */
-    color: #5a4033; /* Dark brown text */
-    font-weight: 700;
-}
-.btn-primary:focus {
-    outline: none; /* Removes blue focus outline */
-    box-shadow: 0 0 5px #5a4033; /* Adds a subtle glow effect */
-}
-/* Button Styling */
-.btn-primary {
-    background-color: #5a4033; /* Dark brown background */
-    border: 2px solid #5a4033; /* Match border with the button background */
-    color: #fdf8f2; /* Off-white text */
-    transition: all 0.3s ease-in-out;
-}
-
 .btn-primary:hover {
     background-color: #fdf8f2; /* Off-white background */
     color: #5a4033; /* Dark brown text */
-    border: 2px solid #5a4033; /* Retain the same dark brown border */
-    font-weight: 700; /* Optional: Add emphasis on hover */
-    text-decoration: none; /* Prevent underline on hover */
+    border: 2px solid #5a4033; /* Maintain border color */
 }
 
+/* Button Focus State */
+.btn-primary:focus {
+    outline: none; /* Remove default blue outline */
+    box-shadow: 0 0 5px #5a4033; /* Add subtle brown glow */
+}
 
 /* Footer */
 footer {
