@@ -1,8 +1,9 @@
 const form = document.getElementById("contact-form");
+const successMessage = document.getElementById("success-message");
+
 if (form) {
-    form.addEventListener("submit", function (e) {
+    form.addEventListener("submit", (e) => {
         e.preventDefault();
-        const successMessage = document.getElementById("success-message");
         if (successMessage) {
             successMessage.style.display = "block";
         }
