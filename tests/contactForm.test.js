@@ -1,5 +1,4 @@
-const fs = require('fs');
-const path = require('path');
+/** @jest-environment jsdom */
 
 // JSDOM will automatically create a document for us
 document.body.innerHTML = `
